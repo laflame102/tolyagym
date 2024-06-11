@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing up</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="testbox">
+      <h1>Registration</h1>
+
+      <form action="/">
+        <hr />
+        <div class="accounttype">
+          <input
+            type="radio"
+            value="Personal"
+            id="radioOne"
+            name="account"
+            checked
+          />
+          <label for="radioOne" class="radio">Personal</label>
+          <input type="radio" value="Company" id="radioTwo" name="account" />
+          <label for="radioTwo" class="radio">Company</label>
+        </div>
+        <hr />
+        <label id="icon" for="email"><i class="icon-envelope"></i></label>
+        <input
+          type="email"
+          name="email"
+          id="emailInput"
+          placeholder="Email"
+          required
+        />
+        <label id="icon" for="name"><i class="icon-user"></i></label>
+        <input
+          type="text"
+          name="name"
+          id="nameInput"
+          placeholder="Name"
+          required
+        />
+        <label id="icon" for="password"><i class="icon-shield"></i></label>
+        <input
+          type="password"
+          name="password"
+          id="passwordInput"
+          placeholder="Password"
+          required
+        />
+        <div class="gender">
+          <input type="radio" value="Male" id="male" name="gender" checked />
+          <label for="male" class="radio">Male</label>
+          <input type="radio" value="Female" id="female" name="gender" />
+          <label for="female" class="radio">Female</label>
+        </div>
+        <p>
+          By clicking Register, you agree on our
+          <a href="#">terms and condition</a>.
+        </p>
+        <button type="submit" class="button">Register</button>
+      </form>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

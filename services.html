@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фітнес-клуб "FITNESTIME" - Про нас</title>
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="stylesheet" href="css/services.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Фітнес-клуб "FITNESTIME"</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="about.html">Про нас</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="register">
+        <a href="register.html" target="_blank">Зареєструватися</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact">
+        <h2 class="centered">АБОНЕМЕНТИ У ФІТНЕС ЗАЛ «FITNESSTIME»</h2>
+        <ul id="membership-list">
+          <!-- Сюди будуть додані результати запитів через JavaScript -->
+        </ul>
+
+        <!-- Форма для додавання нового абонементу -->
+        <h2 class="centered">Додати абонімент</h2>
+        <form
+          id="add-membership-form"
+          class="membership-form centered"
+          enctype="multipart/form-data"
+        >
+          <label for="membershipName">Назва:</label>
+          <input
+            type="text"
+            id="membershipName"
+            class="membership-input"
+            required
+          /><br />
+          <label for="membershipPrice">Price:</label>
+          <input
+            type="number"
+            id="membershipPrice"
+            class="membership-input"
+            required
+          /><br />
+          <button id="add-membership-button" class="membership-button">
+            Додати
+          </button>
+        </form>
+
+        <!-- Форма для оновлення інформації про абонемент -->
+        <h2 class="centered">Редагувати абонімент</h2>
+        <form
+          id="edit-membership-form"
+          class="membership-form centered"
+          style="display: none"
+        >
+          <input type="hidden" id="edit-membership-id" />
+          <label for="editMembershipName">Назва:</label>
+          <input
+            type="text"
+            id="editMembershipName"
+            class="membership-input"
+            required
+          /><br />
+          <label for="editMembershipPrice">Ціна:</label>
+          <input
+            type="number"
+            id="editMembershipPrice"
+            class="membership-input"
+            required
+          /><br />
+          <button id="update-membership-button" class="membership-button">
+            Оновити
+          </button>
+          <button id="cancel-update-button" class="membership-button">
+            Відмінити
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>
