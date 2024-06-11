@@ -143,15 +143,15 @@ html {
 }
 
 .parallax1 {
-  background-image: url("https://img.goodfon.com/original/1920x1080/e/97/shtanga-skamya-gym-fitness.jpg");
+  background-image: url(/img/first.webp);
 }
 
 .parallax2 {
-  background-image: url("https://img.goodfon.com/original/1920x1080/2/cb/ganteli-trenazhernyy-zal.jpg");
+  background-image: url(/img/second.webp);
 }
 
 .parallax3 {
-  background-image: url("https://www.gym-works.co.uk/wp-content/uploads/2016/12/fw-IMG_9316-1920x1080.jpg");
+  background-image: url(/img/third.webp);
 }
 
 .content-section {
